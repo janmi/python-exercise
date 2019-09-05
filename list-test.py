@@ -44,7 +44,6 @@ list3 = [2, 8, 10]
 print([item * 2 for item in list3])
 
 # list 过滤
-
 print([item for item in list3 if item > 2])
 
 
