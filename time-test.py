@@ -1,5 +1,5 @@
 import time
-
+import datetime
 # print('按下回车开始计时，按下 Ctrl + C 停止计时。')
 
 # while True:
@@ -24,3 +24,22 @@ timeArr = time.strptime(time1, '%Y-%m-%d %H:%M:%S')
 # 转换为时间戳
 timeStamp = int(time.mktime(timeArr))
 print(timeStamp)
+
+# 先获得时间数组格式的日期
+threeDayago = (datetime.datetime.now() - datetime.timedelta(days = 3))
+
+# 转换为时间戳
+timeStamp2 = int(time.mktime(threeDayago.timetuple()))
+styleTime = threeDayago.strftime('%Y-%m-%d %H:%M:%S')
+print(styleTime)
+
+
+now = int(time.time())
+timeArr2 = time.localtime(now)
+styleTime2 = time.strftime('%Y-%m-%d %H:%M:%S', timeArr2)
+print(styleTime2)
+
+
+
+
+
