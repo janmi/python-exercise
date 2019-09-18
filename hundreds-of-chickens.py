@@ -1,3 +1,4 @@
+# 求百钱百鸡
 def HundredsOfChickens():
 	list = []
 	for x in range(1, 100):
